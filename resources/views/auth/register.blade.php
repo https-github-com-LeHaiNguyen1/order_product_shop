@@ -48,6 +48,16 @@
                                 <div class="form-group">
                                         <input id="password-confirm" type="password" class="form-control form-control-user" name="password_confirmation" required autocomplete="new-password" placeholder="confirm password">
                                 </div>
+                                <div class="form-group">
+                                    <select name="role" id="role" class="form-select form-select-sm form-control-user mb-3" aria-label=".form-select-sm example">
+                                        <option value="admin">Admin</option>
+                                        <option value="user">User</option>
+                                      </select>
+                                    {{-- <select name="role" id="role" class="form-select form-control-user">
+                                        <option value="admin">Admin</option>
+                                        <option value="user">User</option>
+                                    </select> --}}
+                                </div>                                
                                 <button class="btn btn-primary btn-user btn-block">
                                     Register
                                 </button>
