@@ -3,11 +3,11 @@
 0. Setup Vshot xampp and host windows
 
 1. Setup src
-   1.0 coppy .env.example to .env
-   1.1 composer install
-   1.2 create database connection mysql and add database name order_plading_page
-    1.1.1 Character set : utf8mb4
-    1.1.2 Collation: utf8mb4_unicode_ci
+  - coppy .env.example to .env
+  - composer install
+  - create database connection mysql and add database name order_plading_page
+  - Character set : utf8mb4
+  - Collation: utf8mb4_unicode_ci
 
 2. Create update migrate: php artisan migrate --seed
 
