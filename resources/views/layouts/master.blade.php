@@ -21,7 +21,7 @@
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="{{asset('admin/css/sb-admin-2.min.css')}}" rel="stylesheet">
+    <link href="{{asset('admin/css/main.min.css')}}" rel="stylesheet">
 
 </head>
 
@@ -31,7 +31,7 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        @include('common.sidebar')
+        @include('layouts.common.sidebar')
         <!-- End of Sidebar -->
 
         <!-- Content Wrapper -->
@@ -41,7 +41,7 @@
             <div id="content">
 
                 <!-- Topbar -->
-                @include('common.header')
+                @include('layouts.common.header')
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
@@ -52,7 +52,7 @@
             <!-- End of Main Content -->
 
             <!-- Footer -->
-            @include('common.footer')
+            @include('layouts.common.footer')
             <!-- End of Footer -->
 
         </div>
