@@ -13,42 +13,43 @@
 
 3. Folder structure with sass 7–1 Pattern, Abstracts (or utilities)
 
-    sass/
-    |
-    |– abstracts/ (or utilities/)
-    |   |– _variables.scss    // Sass Variables
-    |   |– _functions.scss    // Sass Functions
-    |   |– _mixins.scss       // Sass Mixins
-    |
-    |– base/
-    |   |– _reset.scss        // Reset/normalize
-    |   |– _typography.scss   // Typography rules
-    |
-    |– components/ (or modules/)
-    |   |– _buttons.scss      // Buttons
-    |   |– _carousel.scss     // Carousel
-    |   |– _slider.scss       // Slider
-    |
-    |– layout/
-    |   |– _navigation.scss   // Navigation
-    |   |– _grid.scss         // Grid system
-    |   |– _header.scss       // Header
-    |   |– _footer.scss       // Footer
-    |   |– _sidebar.scss      // Sidebar
-    |   |– _forms.scss        // Forms
-    |
-    |– pages/
-    |   |– _home.scss         // Home specific styles
-    |   |– _about.scss        // About specific styles
-    |   |– _contact.scss      // Contact specific styles
-    |
-    |– themes/
-    |   |– _theme.scss        // Default theme
-    |   |– _admin.scss        // Admin theme
-    |
-    |– vendors/
-    |   |– _bootstrap.scss    // Bootstrap
-    |   |– _jquery-ui.scss    // jQuery UI
-    |
-    `– main.scss              // Main Sass file
+   **Pattern Template 7-1**, an extraordinarily neat architecture that any Web Designer can understand at a glance. Structure with the help of SASS syntax (**.sass extension**).
 
+``` txt
+sass/                    
+|    
+|– abstracts/                   
+|   |– _mixins.sass     
+|   |– _variables.sass   
+|– base/              
+|   |– _base.sass   
+|   |– _fonts.sass   
+|   |– _helpers.sass
+|   |– _typography.sass
+|– components/   
+|   |– _alert.sass     
+|   |– _button.sass        
+|   ...
+|– layout/                
+|   |– _footer.sass
+|   |– _header.sass
+|– pages/                
+|   |– _home.sass        
+|   ...
+|– themes/                
+|   |– _dark.sass        
+|   |– _light.sass     
+|– vendors/                
+|   |– _normalize.sass       
+|   |– _owl-carousel.sass
+|   ...
+`– main.sass             
+```
+
+# Compile SASS.
+
+## Watch: Autocompile if it detects changes 
+
+``` bash
+node-sass --watch --source-map true --output-style compressed sass/main.sass css/main.css
+```
