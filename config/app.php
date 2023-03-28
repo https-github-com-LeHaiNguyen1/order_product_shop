@@ -229,5 +229,32 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
     ],
+    'debug_blacklist' => [
+        '_ENV' => [
+            'APP_KEY',
+            'ADMIN_DIR',
+            'DB_DATABASE',
+            'DB_USERNAME',
+            'DB_PASSWORD',
+            'REDIS_PASSWORD',
+            'MAIL_PASSWORD',
+            'PUSHER_APP_KEY',
+            'PUSHER_APP_SECRET',
+        ],
+        '_SERVER' => [
+            'APP_KEY',
+            'ADMIN_DIR',
+            'DB_DATABASE',
+            'DB_USERNAME',
+            'DB_PASSWORD',
+            'REDIS_PASSWORD',
+            'MAIL_PASSWORD',
+            'PUSHER_APP_KEY',
+            'PUSHER_APP_SECRET',
+        ],
+        '_POST' => [
+            'password',
+        ],
+    ],
 
 ];

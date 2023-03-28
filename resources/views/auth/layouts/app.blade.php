@@ -10,7 +10,7 @@
     <meta name="author" content="">
 
     <title>Ecosystem</title>
-
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <!-- Custom fonts for this template-->
     <link href="{{asset('admin/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
     <link
