@@ -9,9 +9,11 @@
   - Character set : utf8mb4
   - Collation: utf8mb4_unicode_ci
 
-2. Create update migrate: php artisan migrate --seed
+2. php artisan key:generate
 
-3. Folder structure with sass 7–1 Pattern, Abstracts (or utilities)
+3. Create update migrate: php artisan migrate --seed
+
+4. Folder structure with sass 7–1 Pattern, Abstracts (or utilities)
 
    **Pattern Template 7-1**, an extraordinarily neat architecture that any Web Designer can understand at a glance. Structure with the help of SASS syntax (**.sass extension**).
 

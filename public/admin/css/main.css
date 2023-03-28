@@ -20,7 +20,7 @@
   --gray: #858796;
   --gray-dark: #5a5c69;
   --primary: #4e73df;
-  --secondary: #858796;
+  --secondary: rgba(193, 239, 253, 0.862745098);
   --success: #1cc88a;
   --info: #36b9cc;
   --warning: #f6c23e;
@@ -1536,21 +1536,21 @@ pre code {
 .table-secondary,
 .table-secondary > th,
 .table-secondary > td {
-  background-color: #dddde2;
+  background-color: rgba(241, 251, 255, 0.9615686275);
 }
 .table-secondary th,
 .table-secondary td,
 .table-secondary thead th,
 .table-secondary tbody + tbody {
-  border-color: #c0c1c8;
+  border-color: rgba(227, 248, 254, 0.928627451);
 }
 
 .table-hover .table-secondary:hover {
-  background-color: #cfcfd6;
+  background-color: rgba(216, 244, 255, 0.9615686275);
 }
 .table-hover .table-secondary:hover > td,
 .table-hover .table-secondary:hover > th {
-  background-color: #cfcfd6;
+  background-color: rgba(216, 244, 255, 0.9615686275);
 }
 
 .table-success,
@@ -2277,33 +2277,33 @@ fieldset:disabled a.btn {
 }
 
 .btn-secondary {
-  color: #fff;
-  background-color: #858796;
-  border-color: #858796;
+  color: #3a3b45;
+  background-color: rgba(193, 239, 253, 0.862745098);
+  border-color: rgba(193, 239, 253, 0.862745098);
 }
 .btn-secondary:hover {
-  color: #fff;
-  background-color: #717384;
-  border-color: #6b6d7d;
+  color: #3a3b45;
+  background-color: rgba(156, 229, 252, 0.862745098);
+  border-color: rgba(144, 226, 251, 0.862745098);
 }
 .btn-secondary:focus, .btn-secondary.focus {
-  color: #fff;
-  background-color: #717384;
-  border-color: #6b6d7d;
-  box-shadow: 0 0 0 0.2rem rgba(151, 153, 166, 0.5);
+  color: #3a3b45;
+  background-color: rgba(156, 229, 252, 0.862745098);
+  border-color: rgba(144, 226, 251, 0.862745098);
+  box-shadow: 0 0 0 0.2rem rgba(168, 205, 218, 0.5);
 }
 .btn-secondary.disabled, .btn-secondary:disabled {
-  color: #fff;
-  background-color: #858796;
-  border-color: #858796;
+  color: #3a3b45;
+  background-color: rgba(193, 239, 253, 0.862745098);
+  border-color: rgba(193, 239, 253, 0.862745098);
 }
 .btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show > .btn-secondary.dropdown-toggle {
-  color: #fff;
-  background-color: #6b6d7d;
-  border-color: #656776;
+  color: #3a3b45;
+  background-color: rgba(144, 226, 251, 0.862745098);
+  border-color: rgba(131, 223, 251, 0.862745098);
 }
 .btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .show > .btn-secondary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(151, 153, 166, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(168, 205, 218, 0.5);
 }
 
 .btn-success {
@@ -2512,28 +2512,28 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-secondary {
-  color: #858796;
-  border-color: #858796;
+  color: rgba(193, 239, 253, 0.862745098);
+  border-color: rgba(193, 239, 253, 0.862745098);
 }
 .btn-outline-secondary:hover {
-  color: #fff;
-  background-color: #858796;
-  border-color: #858796;
+  color: #3a3b45;
+  background-color: rgba(193, 239, 253, 0.862745098);
+  border-color: rgba(193, 239, 253, 0.862745098);
 }
 .btn-outline-secondary:focus, .btn-outline-secondary.focus {
-  box-shadow: 0 0 0 0.2rem rgba(133, 135, 150, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(193, 239, 253, 0.5);
 }
 .btn-outline-secondary.disabled, .btn-outline-secondary:disabled {
-  color: #858796;
+  color: rgba(193, 239, 253, 0.862745098);
   background-color: transparent;
 }
 .btn-outline-secondary:not(:disabled):not(.disabled):active, .btn-outline-secondary:not(:disabled):not(.disabled).active, .show > .btn-outline-secondary.dropdown-toggle {
-  color: #fff;
-  background-color: #858796;
-  border-color: #858796;
+  color: #3a3b45;
+  background-color: rgba(193, 239, 253, 0.862745098);
+  border-color: rgba(193, 239, 253, 0.862745098);
 }
 .btn-outline-secondary:not(:disabled):not(.disabled):active:focus, .btn-outline-secondary:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-secondary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(133, 135, 150, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(193, 239, 253, 0.5);
 }
 
 .btn-outline-success {
@@ -4521,16 +4521,16 @@ a.badge-primary:focus, a.badge-primary.focus {
 }
 
 .badge-secondary {
-  color: #fff;
-  background-color: #858796;
+  color: #3a3b45;
+  background-color: rgba(193, 239, 253, 0.862745098);
 }
 a.badge-secondary:hover, a.badge-secondary:focus {
-  color: #fff;
-  background-color: #6b6d7d;
+  color: #3a3b45;
+  background-color: rgba(144, 226, 251, 0.862745098);
 }
 a.badge-secondary:focus, a.badge-secondary.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(133, 135, 150, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(193, 239, 253, 0.5);
 }
 
 .badge-success {
@@ -4670,15 +4670,15 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .alert-secondary {
-  color: #45464e;
-  background-color: #e7e7ea;
-  border-color: #dddde2;
+  color: rgba(87, 108, 114, 0.928627451);
+  background-color: rgba(245, 252, 255, 0.9725490196);
+  border-color: rgba(241, 251, 255, 0.9615686275);
 }
 .alert-secondary hr {
-  border-top-color: #cfcfd6;
+  border-top-color: rgba(216, 244, 255, 0.9615686275);
 }
 .alert-secondary .alert-link {
-  color: #2d2e33;
+  color: rgba(65, 81, 85, 0.928627451);
 }
 
 .alert-success {
@@ -5013,17 +5013,17 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .list-group-item-secondary {
-  color: #45464e;
-  background-color: #dddde2;
+  color: rgba(87, 108, 114, 0.928627451);
+  background-color: rgba(241, 251, 255, 0.9615686275);
 }
 .list-group-item-secondary.list-group-item-action:hover, .list-group-item-secondary.list-group-item-action:focus {
-  color: #45464e;
-  background-color: #cfcfd6;
+  color: rgba(87, 108, 114, 0.928627451);
+  background-color: rgba(216, 244, 255, 0.9615686275);
 }
 .list-group-item-secondary.list-group-item-action.active {
   color: #fff;
-  background-color: #45464e;
-  border-color: #45464e;
+  background-color: rgba(87, 108, 114, 0.928627451);
+  border-color: rgba(87, 108, 114, 0.928627451);
 }
 
 .list-group-item-success {
@@ -5882,13 +5882,13 @@ button.bg-primary:focus {
 }
 
 .bg-secondary {
-  background-color: #858796 !important;
+  background-color: rgba(193, 239, 253, 0.862745098) !important;
 }
 
 a.bg-secondary:hover, a.bg-secondary:focus,
 button.bg-secondary:hover,
 button.bg-secondary:focus {
-  background-color: #6b6d7d !important;
+  background-color: rgba(144, 226, 251, 0.862745098) !important;
 }
 
 .bg-success {
@@ -6004,7 +6004,7 @@ button.bg-dark:focus {
 }
 
 .border-secondary {
-  border-color: #858796 !important;
+  border-color: rgba(193, 239, 253, 0.862745098) !important;
 }
 
 .border-success {
@@ -9033,11 +9033,11 @@ a.text-primary:hover, a.text-primary:focus {
 }
 
 .text-secondary {
-  color: #858796 !important;
+  color: rgba(193, 239, 253, 0.862745098) !important;
 }
 
 a.text-secondary:hover, a.text-secondary:focus {
-  color: #60616f !important;
+  color: rgba(119, 220, 251, 0.862745098) !important;
 }
 
 .text-success {
@@ -9300,49 +9300,49 @@ a:focus {
 
 .bg-gradient-primary {
   background-color: #4e73df;
-  background-image: linear-gradient(180deg, #4e73df 10%, #224abe 100%);
+  background-image: linear-gradient(to top left, rgba(228, 242, 248, 0.931372549) 50%, rgba(193, 239, 253, 0.862745098) 50%);
   background-size: cover;
 }
 
 .bg-gradient-secondary {
-  background-color: #858796;
-  background-image: linear-gradient(180deg, #858796 10%, #60616f 100%);
+  background-color: rgba(193, 239, 253, 0.862745098);
+  background-image: linear-gradient(to top left, rgba(228, 242, 248, 0.931372549) 50%, rgba(193, 239, 253, 0.862745098) 50%);
   background-size: cover;
 }
 
 .bg-gradient-success {
   background-color: #1cc88a;
-  background-image: linear-gradient(180deg, #1cc88a 10%, #13855c 100%);
+  background-image: linear-gradient(to top left, rgba(228, 242, 248, 0.931372549) 50%, rgba(193, 239, 253, 0.862745098) 50%);
   background-size: cover;
 }
 
 .bg-gradient-info {
   background-color: #36b9cc;
-  background-image: linear-gradient(180deg, #36b9cc 10%, #258391 100%);
+  background-image: linear-gradient(to top left, rgba(228, 242, 248, 0.931372549) 50%, rgba(193, 239, 253, 0.862745098) 50%);
   background-size: cover;
 }
 
 .bg-gradient-warning {
   background-color: #f6c23e;
-  background-image: linear-gradient(180deg, #f6c23e 10%, #dda20a 100%);
+  background-image: linear-gradient(to top left, rgba(228, 242, 248, 0.931372549) 50%, rgba(193, 239, 253, 0.862745098) 50%);
   background-size: cover;
 }
 
 .bg-gradient-danger {
   background-color: #e74a3b;
-  background-image: linear-gradient(180deg, #e74a3b 10%, #be2617 100%);
+  background-image: linear-gradient(to top left, rgba(228, 242, 248, 0.931372549) 50%, rgba(193, 239, 253, 0.862745098) 50%);
   background-size: cover;
 }
 
 .bg-gradient-light {
   background-color: #f8f9fc;
-  background-image: linear-gradient(180deg, #f8f9fc 10%, #c2cbe5 100%);
+  background-image: linear-gradient(to top left, rgba(228, 242, 248, 0.931372549) 50%, rgba(193, 239, 253, 0.862745098) 50%);
   background-size: cover;
 }
 
 .bg-gradient-dark {
   background-color: #5a5c69;
-  background-image: linear-gradient(180deg, #5a5c69 10%, #373840 100%);
+  background-image: linear-gradient(to top left, rgba(228, 242, 248, 0.931372549) 50%, rgba(193, 239, 253, 0.862745098) 50%);
   background-size: cover;
 }
 
@@ -9448,11 +9448,11 @@ a:focus {
 }
 
 .border-left-secondary {
-  border-left: 0.25rem solid #858796 !important;
+  border-left: 0.25rem solid rgba(193, 239, 253, 0.862745098) !important;
 }
 
 .border-bottom-secondary {
-  border-bottom: 0.25rem solid #858796 !important;
+  border-bottom: 0.25rem solid rgba(193, 239, 253, 0.862745098) !important;
 }
 
 .border-left-success {
@@ -10154,98 +10154,6 @@ a:focus {
   }
 }
 
-.bg-login-image {
-  background: url("https://source.unsplash.com/K4mSJ7kc0As/600x800");
-  background-position: center;
-  background-size: cover;
-}
-
-.bg-register-image {
-  background: url("https://source.unsplash.com/Mv9hjnEUHR4/600x800");
-  background-position: center;
-  background-size: cover;
-}
-
-.bg-password-image {
-  background: url("https://source.unsplash.com/oWTW-jNGl9I/600x800");
-  background-position: center;
-  background-size: cover;
-}
-
-form.user .custom-checkbox.small label {
-  line-height: 1.5rem;
-}
-form.user .form-control-user {
-  font-size: 0.8rem;
-  border-radius: 10rem;
-  padding: 1.5rem 1rem;
-}
-form.user .btn-user {
-  font-size: 0.8rem;
-  border-radius: 10rem;
-  padding: 0.75rem 1rem;
-}
-
-.btn-google {
-  color: #fff;
-  background-color: #ea4335;
-  border-color: #fff;
-}
-.btn-google:hover {
-  color: #fff;
-  background-color: #e12717;
-  border-color: #e6e6e6;
-}
-.btn-google:focus, .btn-google.focus {
-  color: #fff;
-  background-color: #e12717;
-  border-color: #e6e6e6;
-  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
-}
-.btn-google.disabled, .btn-google:disabled {
-  color: #fff;
-  background-color: #ea4335;
-  border-color: #fff;
-}
-.btn-google:not(:disabled):not(.disabled):active, .btn-google:not(:disabled):not(.disabled).active, .show > .btn-google.dropdown-toggle {
-  color: #fff;
-  background-color: #d62516;
-  border-color: #dfdfdf;
-}
-.btn-google:not(:disabled):not(.disabled):active:focus, .btn-google:not(:disabled):not(.disabled).active:focus, .show > .btn-google.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
-}
-
-.btn-facebook {
-  color: #fff;
-  background-color: #3b5998;
-  border-color: #fff;
-}
-.btn-facebook:hover {
-  color: #fff;
-  background-color: #30497c;
-  border-color: #e6e6e6;
-}
-.btn-facebook:focus, .btn-facebook.focus {
-  color: #fff;
-  background-color: #30497c;
-  border-color: #e6e6e6;
-  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
-}
-.btn-facebook.disabled, .btn-facebook:disabled {
-  color: #fff;
-  background-color: #3b5998;
-  border-color: #fff;
-}
-.btn-facebook:not(:disabled):not(.disabled):active, .btn-facebook:not(:disabled):not(.disabled).active, .show > .btn-facebook.dropdown-toggle {
-  color: #fff;
-  background-color: #2d4373;
-  border-color: #dfdfdf;
-}
-.btn-facebook:not(:disabled):not(.disabled):active:focus, .btn-facebook:not(:disabled):not(.disabled).active:focus, .show > .btn-facebook.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
-}
-
 .error {
   color: #5a5c69;
   font-size: 7rem;
@@ -10256,67 +10164,67 @@ form.user .btn-user {
 
 @keyframes noise-anim {
   0% {
-    clip: rect(85px, 9999px, 97px, 0);
+    clip: rect(76px, 9999px, 2px, 0);
   }
   5% {
-    clip: rect(76px, 9999px, 46px, 0);
+    clip: rect(50px, 9999px, 42px, 0);
   }
   10% {
-    clip: rect(56px, 9999px, 66px, 0);
+    clip: rect(31px, 9999px, 28px, 0);
   }
   15% {
-    clip: rect(20px, 9999px, 81px, 0);
+    clip: rect(30px, 9999px, 84px, 0);
   }
   20% {
-    clip: rect(9px, 9999px, 63px, 0);
+    clip: rect(6px, 9999px, 26px, 0);
   }
   25% {
-    clip: rect(42px, 9999px, 85px, 0);
+    clip: rect(20px, 9999px, 70px, 0);
   }
   30% {
-    clip: rect(20px, 9999px, 48px, 0);
+    clip: rect(74px, 9999px, 15px, 0);
   }
   35% {
-    clip: rect(97px, 9999px, 73px, 0);
+    clip: rect(76px, 9999px, 38px, 0);
   }
   40% {
-    clip: rect(76px, 9999px, 96px, 0);
+    clip: rect(34px, 9999px, 76px, 0);
   }
   45% {
-    clip: rect(55px, 9999px, 50px, 0);
+    clip: rect(98px, 9999px, 59px, 0);
   }
   50% {
-    clip: rect(15px, 9999px, 37px, 0);
+    clip: rect(29px, 9999px, 38px, 0);
   }
   55% {
-    clip: rect(91px, 9999px, 33px, 0);
+    clip: rect(10px, 9999px, 90px, 0);
   }
   60% {
-    clip: rect(94px, 9999px, 74px, 0);
+    clip: rect(17px, 9999px, 5px, 0);
   }
   65% {
-    clip: rect(14px, 9999px, 30px, 0);
+    clip: rect(55px, 9999px, 68px, 0);
   }
   70% {
-    clip: rect(78px, 9999px, 19px, 0);
+    clip: rect(14px, 9999px, 97px, 0);
   }
   75% {
-    clip: rect(14px, 9999px, 34px, 0);
+    clip: rect(38px, 9999px, 34px, 0);
   }
   80% {
-    clip: rect(80px, 9999px, 83px, 0);
+    clip: rect(38px, 9999px, 82px, 0);
   }
   85% {
-    clip: rect(6px, 9999px, 11px, 0);
+    clip: rect(11px, 9999px, 15px, 0);
   }
   90% {
-    clip: rect(63px, 9999px, 39px, 0);
+    clip: rect(21px, 9999px, 77px, 0);
   }
   95% {
-    clip: rect(37px, 9999px, 89px, 0);
+    clip: rect(84px, 9999px, 71px, 0);
   }
   100% {
-    clip: rect(88px, 9999px, 1px, 0);
+    clip: rect(7px, 9999px, 3px, 0);
   }
 }
 .error:after {
@@ -10334,67 +10242,67 @@ form.user .btn-user {
 
 @keyframes noise-anim-2 {
   0% {
-    clip: rect(22px, 9999px, 25px, 0);
+    clip: rect(31px, 9999px, 83px, 0);
   }
   5% {
-    clip: rect(62px, 9999px, 2px, 0);
+    clip: rect(19px, 9999px, 58px, 0);
   }
   10% {
-    clip: rect(41px, 9999px, 49px, 0);
+    clip: rect(32px, 9999px, 44px, 0);
   }
   15% {
-    clip: rect(20px, 9999px, 55px, 0);
+    clip: rect(48px, 9999px, 3px, 0);
   }
   20% {
-    clip: rect(2px, 9999px, 84px, 0);
+    clip: rect(39px, 9999px, 29px, 0);
   }
   25% {
-    clip: rect(67px, 9999px, 63px, 0);
+    clip: rect(41px, 9999px, 4px, 0);
   }
   30% {
-    clip: rect(71px, 9999px, 52px, 0);
+    clip: rect(47px, 9999px, 99px, 0);
   }
   35% {
-    clip: rect(94px, 9999px, 97px, 0);
+    clip: rect(15px, 9999px, 68px, 0);
   }
   40% {
-    clip: rect(96px, 9999px, 28px, 0);
+    clip: rect(43px, 9999px, 53px, 0);
   }
   45% {
-    clip: rect(53px, 9999px, 35px, 0);
+    clip: rect(71px, 9999px, 74px, 0);
   }
   50% {
-    clip: rect(84px, 9999px, 27px, 0);
+    clip: rect(70px, 9999px, 19px, 0);
   }
   55% {
-    clip: rect(64px, 9999px, 82px, 0);
+    clip: rect(23px, 9999px, 86px, 0);
   }
   60% {
-    clip: rect(84px, 9999px, 65px, 0);
+    clip: rect(66px, 9999px, 37px, 0);
   }
   65% {
-    clip: rect(38px, 9999px, 2px, 0);
+    clip: rect(47px, 9999px, 38px, 0);
   }
   70% {
-    clip: rect(95px, 9999px, 19px, 0);
+    clip: rect(10px, 9999px, 85px, 0);
   }
   75% {
-    clip: rect(18px, 9999px, 57px, 0);
+    clip: rect(49px, 9999px, 41px, 0);
   }
   80% {
-    clip: rect(6px, 9999px, 8px, 0);
+    clip: rect(14px, 9999px, 8px, 0);
   }
   85% {
-    clip: rect(79px, 9999px, 85px, 0);
+    clip: rect(27px, 9999px, 78px, 0);
   }
   90% {
-    clip: rect(76px, 9999px, 97px, 0);
+    clip: rect(18px, 9999px, 45px, 0);
   }
   95% {
-    clip: rect(65px, 9999px, 61px, 0);
+    clip: rect(10px, 9999px, 61px, 0);
   }
   100% {
-    clip: rect(33px, 9999px, 89px, 0);
+    clip: rect(25px, 9999px, 7px, 0);
   }
 }
 .error:before {
