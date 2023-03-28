@@ -3,7 +3,7 @@
 @each $color, $value in $theme-colors {
   .bg-gradient-#{$color} {
     background-color: $value;
-    background-image: linear-gradient(180deg, $value 10%, darken($value, 15%) 100%);
+    background-image: linear-gradient(to top left, $gradient-color 50%, $secondary 50%);
     background-size: cover;
   }
 }
