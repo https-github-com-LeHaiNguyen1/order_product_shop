@@ -1,4 +1,4 @@
-@extends('auth.layouts.app')
+@extends('.layouts.aut.adminOnly-master')
 @section('title', '棚卸明細訂正処理')
 
 @push('custom-css')
