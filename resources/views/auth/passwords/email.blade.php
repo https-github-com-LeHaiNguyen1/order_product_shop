@@ -1,4 +1,4 @@
-@extends('.layouts.auth.adminOnly-master')
+@extends('.Layouts.Auth.adminOnly-master')
 
 @section('title', '棚卸明細訂正処理')
 

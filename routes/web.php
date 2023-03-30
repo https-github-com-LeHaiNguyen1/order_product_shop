@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('auth.login');
+    return view('Auth.login');
 });
 
 // gọi hàm Auth::logout() để đăng xuất người dùng và chuyển hướng trang về trang đăng nhập
