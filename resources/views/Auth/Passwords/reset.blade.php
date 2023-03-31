@@ -1,4 +1,4 @@
-@extends('auth.layouts.app')
+@extends('.Layouts.Auth.adminOnly-master')
 
 @push('custom-css')
 @endpush
