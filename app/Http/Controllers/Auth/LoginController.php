@@ -53,6 +53,28 @@ class LoginController extends Controller
         $request->session()->invalidate();
         $request->session()->regenerateToken();
 
-        return redirect('/login');
+        return redirect()->route('login');
+    }
+
+    public function login(Request $request)
+    {
+        if(Auth::check()){
+            return redirect()->route('home');
+        }
+        return view('Auth.login');
+    }
+
+    public function postLogin(Request $request)
+    {
+        $data = $request->all();
+        $db_check = [
+            'email' => @$data['email'],
+            'password' => @$data['password'],
+        ];
+        if (Auth::attempt($db_check)){
+            return redirect()->route('home');
+        } else{
+            return redirect()->route('login');   
+        }
     }
 }

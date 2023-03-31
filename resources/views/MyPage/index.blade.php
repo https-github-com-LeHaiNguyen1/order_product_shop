@@ -1,7 +1,8 @@
-
-{{-- @extends('Layouts.master') --}}
-@extends('.Layouts.Auth.adminOnly-master')
+@extends('Layouts.master')
 
 @section('content')
-    <div class="text-bg-dark">My page</div>
+<div class="container-fluid">
+
+
+</div>
 @endsection

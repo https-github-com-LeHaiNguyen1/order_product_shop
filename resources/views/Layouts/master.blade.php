@@ -13,13 +13,9 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
-
     <!-- Custom fonts for this template-->
     <link href="{{asset('admin/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <!-- Custom styles for this template-->
     <link href="{{asset('admin/css/main.min.css')}}" rel="stylesheet">
 
@@ -31,7 +27,7 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        @include('Layouts.Common.sidebar')
+        @include('Common.sidebar')
         <!-- End of Sidebar -->
 
         <!-- Content Wrapper -->
@@ -41,7 +37,7 @@
             <div id="content">
 
                 <!-- Topbar -->
-                @include('Layouts.Common.header')
+                @include('Common.header')
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
@@ -52,7 +48,7 @@
             <!-- End of Main Content -->
 
             <!-- Footer -->
-            @include('Layouts.Common.footer')
+            @include('Common.footer')
             <!-- End of Footer -->
 
         </div>
@@ -67,7 +63,7 @@
     </a>
      <!-- Logout Modal-->
     @include('Auth.modal_logout')
-    
+
     <!-- Bootstrap core JavaScript-->
     <script src="{{asset('admin/vendor/jquery/jquery.min.js')}}"></script>
     <script src="{{asset('admin/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>

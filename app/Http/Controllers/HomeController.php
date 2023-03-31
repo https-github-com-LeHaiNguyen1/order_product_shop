@@ -10,12 +10,24 @@ use Illuminate\Support\Arr;
 
 class HomeController extends Controller
 {
+    public function __construct() {
+        $this->middleware('auth');
+    }
     public function index()
     {
-        /* This is a conditional statement that checks the role of the user and returns the appropriate view. */
-        $user = Auth::user();
-        $role = $user->role;
+        if(Auth::check()){
+            /* This  is a conditional statement that checks the role of the user and returns the appropriate view. */
+            $user = Auth::user();
+            $role = $user->role;
+            if($user->role == 1){//admin
+                return view('Admin.index');
+            }
 
-        return view($role == 0 ? 'MyPage/index' : 'Admin/index');
+            if($user->role == 0){//client
+                return view('MyPage.index');
+            }
+            
+        }
+        return redirect()->route('login');
     }
 }
