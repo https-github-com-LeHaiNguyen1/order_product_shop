@@ -26,8 +26,11 @@ Route::get('/logout', function () {
 })->name('logout');
 
 Auth::routes();
-
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/page', [App\Http\Controllers\HomeController::class, 'index'])->name('page');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+/* A route that is only accessible by users with the role of admin. */
+// Route::get('/home', 'HomeController@index')->middleware('role:admin');
 Route::get('password/reset/{token}', 'App\Http\Controllers\Auth\ResetPasswordController@showResetForm')->name('password.reset');
 Route::post('password/reset', 'App\Http\Controllers\Auth\ResetPasswordController@reset')->name('password.update');
 Route::get('password/reset', 'App\Http\Controllers\Auth\ForgotPasswordController@showLinkRequestForm')->name('password.request');

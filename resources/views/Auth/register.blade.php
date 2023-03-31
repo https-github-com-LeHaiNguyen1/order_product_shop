@@ -24,7 +24,6 @@
                                         @csrf
                                         <div class="form-group">
                                             <input id="name" type="text" class="form-control form-control-user @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" placeholder="Name" autofocus>
-            
                                             @error('name')
                                                 <span class="invalid-feedback" role="alert">
                                                     <strong>{{ $message }}</strong>
@@ -43,7 +42,6 @@
                                         </div>
                                         <div class="form-group">
                                             <input id="password" type="password" class="form-control form-control-user @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" placeholder="Password">
-        
                                             @error('password')
                                                 <span class="invalid-feedback" role="alert">
                                                     <strong>{{ $message }}</strong>
@@ -59,9 +57,7 @@
                                                 <option value="user">User</option>
                                               </select>
                                         </div>                                
-                                        <button class="btn btn-primary btn-user btn-block">
-                                            Register
-                                        </button>
+                                        <button class="btn btn-primary btn-user btn-block">Register</button>
                                         <hr>
                                         <a href="#" class="btn btn-google btn-user btn-block">
                                             <i class="fab fa-google fa-fw"></i> Login with Google
