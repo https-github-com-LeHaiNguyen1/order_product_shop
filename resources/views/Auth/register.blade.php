@@ -1,5 +1,4 @@
-@extends('auth.layouts.app')
-@section('title', '棚卸明細訂正処理')
+@extends('.Layouts.Auth.adminOnly-master')
 
 @push('custom-css')
 @endpush
@@ -18,36 +17,47 @@
                                 <div class="card-body p-md-5 mx-md-4">
                                     <div class="text-center">
                                         <h1>Ecosystem</h1>
-                                        <h4>Login into your ダッシュボード</h4>
+                                        <h5>Register Account Your ダッシュボード</h5>
                                         <p class="mt-1 mb-5 pb-1">Management in Functional Management System</p>
                                     </div>
-                                    <form method="POST" action="{{ route('login') }}">
+                                    <form method="POST" action="{{ route('register') }}">
                                         @csrf
-                                        <div class="form-outline mb-4">
-                                            <input id="email" type="email" class="form-control form-control-user 
-                                            @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="Enter Email Address.">
-                                            @error('email')
+                                        <div class="form-group">
+                                            <input id="name" type="text" class="form-control form-control-user @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" placeholder="Name" autofocus>
+                                            @error('name')
                                                 <span class="invalid-feedback" role="alert">
                                                     <strong>{{ $message }}</strong>
                                                 </span>
                                             @enderror
                                         </div>
-                                        <div class="form-outline mb-4">
-                                            <input id="password" type="password" class="form-control form-control-user 
-                                            @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" placeholder="Password">
+        
+                                        <div class="form-group">
+                                            <input id="email" type="email" class="form-control form-control-user @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="Enter Email Address.">
+        
+                                                @error('email')
+                                                    <span class="invalid-feedback" role="alert">
+                                                        <strong>{{ $message }}</strong>
+                                                    </span>
+                                                @enderror
+                                        </div>
+                                        <div class="form-group">
+                                            <input id="password" type="password" class="form-control form-control-user @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" placeholder="Password">
                                             @error('password')
                                                 <span class="invalid-feedback" role="alert">
                                                     <strong>{{ $message }}</strong>
                                                 </span>
                                             @enderror
                                         </div>
-                                        <div class="foform-outline mb-4">
-                                            <div class="custom-control custom-checkbox small">
-                                                <input class="custom-control-input" type="checkbox" name="remember" id="customCheck" {{ old('remember') ? 'checked' : '' }}>
-                                                <label class="custom-control-label" for="customCheck">Remember Me</label>
-                                            </div>
+                                        <div class="form-group">
+                                                <input id="password-confirm" type="password" class="form-control form-control-user" name="password_confirmation" required autocomplete="new-password" placeholder="confirm password">
                                         </div>
-                                        <button class="btn btn-primary btn-user btn-block"> Login </button>
+                                        <div class="form-group">
+                                            <select name="role" id="role" class="form-select form-select-sm form-control-user mb-3" aria-label=".form-select-sm example">
+                                                <option value="admin">Admin</option>
+                                                <option value="user">User</option>
+                                              </select>
+                                        </div>                                
+                                        <button class="btn btn-primary btn-user btn-block">Register</button>
                                         <hr>
                                         <a href="#" class="btn btn-google btn-user btn-block">
                                             <i class="fab fa-google fa-fw"></i> Login with Google
@@ -56,11 +66,9 @@
                                             <i class="fab fa-facebook-f fa-fw"></i> Login with Facebook
                                         </a>
                                     </form>
+                                    <hr>
                                     <div class="text-center">
-                                        <a class="small" href="{{ route('password.request') }}">Forgot Password?</a>
-                                    </div>
-                                    <div class="text-center">
-                                        <a class="small" href="{{ 'register' }}">Create an Account!</a>
+                                        <a class="small" href="{{route('login')}}">Login Here</a>
                                     </div>
                                 </div>
                             </div>
@@ -82,3 +90,10 @@
 
 @push('custom-js')
 @endpush
+
+
+
+
+
+
+
