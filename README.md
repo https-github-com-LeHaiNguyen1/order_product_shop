@@ -11,18 +11,26 @@
 
 2. php artisan key:generate
 
-3. Create update migrate: php artisan migrate --seed
+3. Create table database : php artisan make:migration create_newColum_role_table
 
-4. Folder structure with sass 7–1 Pattern, Abstracts (or utilities)
+4. Create add new column table : php artisan make:migration add_new_column_to_newColum_table --table= NewColum  
+
+5. Update seender:  php artisan migrate:fresh --seed --seeder=UsersTableSeeder
+
+6. Create update migrate: php artisan migrate --seed
+
+7. Folder structure with sass 7–1 Pattern, Abstracts (or utilities)
 
    **Pattern Template 7-1**, an extraordinarily neat architecture that any Web Designer can understand at a glance. Structure with the help of SASS syntax (**.sass extension**).
 
 ``` txt
 sass/                    
 |    
-|– abstracts/                   
-|   |– _mixins.sass     
-|   |– _variables.sass   
+|– Auth /                   
+|   |–Login /
+|      |– index.css  
+|     |– index.css.map  
+|     |– index.sass   
 |– base/              
 |   |– _base.sass   
 |   |– _fonts.sass   
