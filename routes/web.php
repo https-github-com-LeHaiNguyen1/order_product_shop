@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 // gọi hàm Auth::logout() để đăng xuất người dùng và chuyển hướng trang về trang đăng nhập
+Auth::routes();
 Route::post('/logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('logout');
 Route::get('/', [App\Http\Controllers\Auth\LoginController::class, 'login'])->name('login');
 Route::post('/', [App\Http\Controllers\Auth\LoginController::class, 'postLogin'])->name('postLogin');
