@@ -24,7 +24,8 @@ class HomeController extends Controller
             }
 
             if($user->role == 0){//client
-                return view('MyPage.index');
+                // return view('MyPage.index');
+                return redirect()->route('page');
             }
             
         }
