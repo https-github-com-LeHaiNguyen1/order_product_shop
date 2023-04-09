@@ -17,7 +17,9 @@
 
 5. Update seender:  php artisan migrate:fresh --seed --seeder=UsersTableSeeder
 
-6. Create update migrate: php artisan migrate --seed
+6. Create update migrate: 
+      php artisan migrate --seed
+      php artisan migrate:refresh
 
 7. Folder structure with sass 7–1 Pattern, Abstracts (or utilities)
 
