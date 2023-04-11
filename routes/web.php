@@ -28,3 +28,13 @@ Route::post('password/email', 'App\Http\Controllers\Auth\ForgotPasswordControlle
 Route::get('/page', function () {
     return view('MyPage.index');
 })->name('page');
+
+// Route::get('/menus', function () {
+//     return App\Models\Menu::orderBy('order')->get();
+// });
+use App\Models\Menu;
+
+Route::get('/menus', function () {
+    $menus = Menu::select('id', 'name', 'parent_id')->get();
+    return response()->json($menus);
+});
