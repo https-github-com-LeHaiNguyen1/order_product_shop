@@ -21,25 +21,16 @@
                                         <h4>Login into your ダッシュボード</h4>
                                         <p class="mt-1 mb-5 pb-1">Management in Functional Management System</p>
                                     </div>
-                                    <form method="POST" action="{{ route('login') }}">
+                                    <form method="POST" action="{{ route('login') }}" onsubmit="return Checklogin();" >
                                         @csrf
                                         <div class="form-outline mb-4">
-                                            <input id="email" type="email" class="form-control form-control-user 
-                                            @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="Enter Email Address.">
-                                            @error('email')
-                                                <span class="invalid-feedback" role="alert">
-                                                    <strong>{{ $message }}</strong>
-                                                </span>
-                                            @enderror
+                                            <input id="email" type="email" oninput="checkinputLogin()" class="form-control form-control-user" name="email"  value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="Enter Email Address.">
+                                            <span id="email-error" class="error-msg"></span>
                                         </div>
                                         <div class="form-outline mb-4">
-                                            <input id="password" type="password" class="form-control form-control-user 
-                                            @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" placeholder="Password">
-                                            @error('password')
-                                                <span class="invalid-feedback" role="alert">
-                                                    <strong>{{ $message }}</strong>
-                                                </span>
-                                            @enderror
+                                            <input id="password" type="password" oninput="checkinputLogin()" class="form-control form-control-user"  name="password" required autocomplete="current-password" placeholder="Password">
+                                            <lable id="password-error" class="error-msg">
+                                            </lable>
                                         </div>
                                         <div class="foform-outline mb-4">
                                             <div class="custom-control custom-checkbox small">
@@ -47,7 +38,7 @@
                                                 <label class="custom-control-label" for="customCheck">Remember Me</label>
                                             </div>
                                         </div>
-                                        <button class="btn btn-primary btn-user btn-block"> Login </button>
+                                        <button class="btn btn-primary btn-user btn-block" data-toggle="modal" data-target="#loginModal"> Login </button>
                                         <span class="d-block text-left my-4 text-muted">— or login with —</span>
                                         <a href="#" class="btn btn-google btn-user btn-block">
                                             <i class="fab fa-google fa-fw"></i> Login with Google
@@ -81,4 +72,6 @@
 @endpush
 
 @push('custom-js')
+<script src="{{ asset('admin/js/checkinput.js') }}"></script>
+
 @endpush

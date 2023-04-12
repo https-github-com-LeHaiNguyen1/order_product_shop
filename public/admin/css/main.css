@@ -10225,7 +10225,10 @@ a:focus {
 .show > .btn-facebook.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
 }
-
+.error-msg {
+  color: red;
+  font-size: 10px;
+}
 .error {
   color: #5a5c69;
   font-size: 7rem;

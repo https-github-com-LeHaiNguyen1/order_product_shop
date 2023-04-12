@@ -25,14 +25,10 @@
                                     <form method="POST" action="{{ route('password.email') }}">
                                         @csrf
                                         <div class="form-group">
-                                            <input id="email" type="email" class="form-control form-control-user @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="Enter Email Address.">
-                                                @error('email')
-                                                    <span class="invalid-feedback" role="alert">
-                                                        <strong>{{ $message }}</strong>
-                                                    </span>
-                                                @enderror
+                                            <input id="email"oninput="checkinputLogin()" type="email" class="form-control form-control-user @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="Enter Email Address.">
+                                            <lable id="email-error" class="error-msg">
                                         </div>
-                                        <button class="btn btn-primary btn-user btn-block"> Send Password Reset Link</button>     
+                                        <button class="btn btn-primary btn-user btn-block" onclick ="return checkinputLogin()"> Send Password Reset Link</button>     
                                     </form>
                                     <hr>
                                     <div class="text-center">
@@ -57,7 +53,9 @@
 @endpush
 
 @push('custom-js')
+<script src="{{ asset('admin/js/checkinput.js') }}"></script>
 @endpush
+
 
 
 

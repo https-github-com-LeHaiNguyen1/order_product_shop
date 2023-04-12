@@ -28,7 +28,7 @@
 
         <!-- Outer Row -->
         @yield('content')
-
+        @stack('custom-js')
     </div>
 
     <!-- Bootstrap core JavaScript-->
