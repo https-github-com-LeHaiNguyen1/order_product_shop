@@ -20,11 +20,13 @@ Auth::routes();
 Route::post('/logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('logout');
 Route::get('/', [App\Http\Controllers\Auth\LoginController::class, 'login'])->name('login');
 Route::post('/', [App\Http\Controllers\Auth\LoginController::class, 'postLogin'])->name('postLogin');
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('password/reset/{token}', 'App\Http\Controllers\Auth\ResetPasswordController@showResetForm')->name('password.reset');
 Route::post('password/reset', 'App\Http\Controllers\Auth\ResetPasswordController@reset')->name('password.update');
 Route::get('password/reset', 'App\Http\Controllers\Auth\ForgotPasswordController@showLinkRequestForm')->name('password.request');
 Route::post('password/email', 'App\Http\Controllers\Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
+Route::get('/admin/menus', function () {
+    return view('Admin.index');
+})->name('page');
 Route::get('/page', function () {
     return view('MyPage.index');
 })->name('page');
