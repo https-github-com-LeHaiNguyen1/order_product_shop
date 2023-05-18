@@ -5,8 +5,8 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
     state: {
-        apiURL: "http://order_laravel_vuejs.local/api",
-        serverPath: "http://order_laravel_vuejs.local/",
+        apiURL: "http://order_plading_page.local/api",
+        serverPath: "http://order_plading_page.local/",
     },
     mutations: {},
     actions: {},
