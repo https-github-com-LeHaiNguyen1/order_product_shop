@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 // gọi hàm Auth::logout() để đăng xuất người dùng và chuyển hướng trang về trang đăng nhập
 Auth::routes();
-Route::post('/logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('logout');
+Route::get('/logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('logout');
 Route::get('/', [App\Http\Controllers\Auth\LoginController::class, 'login'])->name('login');
 Route::post('/', [App\Http\Controllers\Auth\LoginController::class, 'postLogin'])->name('postLogin');
 Route::get('password/reset/{token}', 'App\Http\Controllers\Auth\ResetPasswordController@showResetForm')->name('password.reset');
@@ -30,13 +30,4 @@ Route::get('/admin/menus', function () {
 Route::get('/page', function () {
     return view('MyPage.index');
 })->name('page');
-
-// Route::get('/menus', function () {
-//     return App\Models\Menu::orderBy('order')->get();
-// });
-use App\Models\Menu;
-
-Route::get('/menus', function () {
-    $menus = Menu::select('id', 'name', 'parent_id')->get();
-    return response()->json($menus);
-});
+Route::get('/products', [App\Http\Controllers\ProductController::class, 'index']);
