@@ -7,6 +7,7 @@ use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\HomeController;
 
 class LoginController extends Controller
 {
@@ -71,10 +72,10 @@ class LoginController extends Controller
             'email' => @$data['email'],
             'password' => @$data['password'],
         ];
-        if (Auth::attempt($db_check)){
-            return redirect()->route('home');
-        } else{
-            return redirect()->route('login');   
+        if (Auth::attempt($db_check)) {
+            return app(HomeController::class)->index();
+        } else {
+            return redirect()->route('login');
         }
     }
 }
