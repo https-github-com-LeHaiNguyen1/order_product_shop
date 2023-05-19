@@ -32,6 +32,7 @@
     - npm i vue-flash-message
 
 II. Login 
+
 1. Laravel Passport
     - install : composer require laravel/passport
 2. Tao seeder admin:

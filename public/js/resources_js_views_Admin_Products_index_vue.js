@@ -2663,7 +2663,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.loading-blocks[data-v-06037d66] {\r\n  /* Định nghĩa animation cho loading blocks */\r\n  /* Ví dụ: sử dụng CSS keyframes để thực hiện animation */\r\n  width: 100px;\r\n  height: 100px;\r\n  background-color: #ccc;\r\n  animation: loading-blocks-06037d66 1s infinite;\n}\n@keyframes loading-blocks-06037d66 {\n0% {\r\n    opacity: 0.2;\n}\n50% {\r\n    opacity: 1;\n}\n100% {\r\n    opacity: 0.2;\n}\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.loading-blocks[data-v-06037d66] {\n  /* Định nghĩa animation cho loading blocks */\n  /* Ví dụ: sử dụng CSS keyframes để thực hiện animation */\n  width: 100px;\n  height: 100px;\n  background-color: #ccc;\n  animation: loading-blocks-06037d66 1s infinite;\n}\n@keyframes loading-blocks-06037d66 {\n0% {\n    opacity: 0.2;\n}\n50% {\n    opacity: 1;\n}\n100% {\n    opacity: 0.2;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
